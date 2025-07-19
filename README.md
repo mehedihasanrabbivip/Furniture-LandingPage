@@ -39,7 +39,7 @@ Built with **HTML5 + Tailwind CSS** and enhanced with **smooth animations** and 
 
 ## 🌍 Live Preview
 
-[Vercel](https://vercel.com),
+[Vercel](https://furniture-landing-page-modern.vercel.app/),
 [GitHub Pages](https://github.com/mehedihasanrabbivip), 
 ![Screenshot of the website](images/Furniture.png)
  
