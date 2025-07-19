@@ -1,0 +1,236 @@
+@import "tailwindcss";
+
+/* navbar start */
+@layer utilities {
+  @keyframes slideDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-slide {
+    animation: slideDown 0.3s ease forwards;
+  }
+}
+/* navbar end */
+
+/* hero section start */
+@layer utilities {
+  @keyframes fade-in {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes slide-up {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .animate-fade-in {
+    animation: fade-in 0.8s ease-out forwards;
+  }
+
+  .animate-slide-up {
+    animation: slide-up 1s ease-out forwards;
+  }
+}
+/* hero section end */
+
+ /* product section start */
+@layer utilities {
+  @keyframes fadeUp {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .animate-fade-up {
+    animation: fadeUp 0.8s ease-out both;
+  }
+
+  .animate-fade-left {
+    animation: fadeLeft 0.8s ease-out both;
+  }
+}
+/* product section End */
+
+/* why choose start */
+@layer utilities {
+  @keyframes fade-up {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-up {
+    animation: fade-up 0.8s ease-out forwards;
+  }
+}
+/* why choose end */
+
+/*  odern section start */
+@layer utilities {
+  @keyframes fade-in-up {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes zoom-in {
+    0% {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  .animate-fade-up {
+    animation: fade-in-up 0.8s ease-out forwards;
+  }
+
+  .animate-zoom {
+    animation: zoom-in 0.6s ease-out forwards;
+  }
+
+  .animation-delay-200 {
+    animation-delay: 0.2s;
+  }
+
+  .animation-delay-400 {
+    animation-delay: 0.4s;
+  }
+
+  .animation-delay-600 {
+    animation-delay: 0.6s;
+  }
+}
+/* odern section end */
+
+/* Testimonials + Product Section start */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes cardFade {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fadeUp {
+  animation: fadeUp 1s ease forwards;
+}
+
+.animate-cardFade {
+  animation: cardFade 0.8s ease forwards;
+}
+
+.delay-150 {
+  animation-delay: 0.15s;
+}
+.delay-300 {
+  animation-delay: 0.3s;
+}
+
+/* Testimonials + Product Section end */
+
+/* Blog Section Start */
+ @keyframes slideInLeftToRight {
+      from {
+        opacity: 0;
+        transform: translateX(-50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    .animate-slideInLeftToRight {
+      animation: slideInLeftToRight 0.6s ease-out both;
+    }
+
+    .delay-100 {
+      animation-delay: 0.1s;
+    }
+
+    .delay-200 {
+      animation-delay: 0.2s;
+    }
+/* Blog Section end */
+
+/* Subscribe section start */
+  @keyframes slideInRightToLeft {
+    from {
+      opacity: 0;
+      transform: translateX(80px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes floatUpDown {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-15px);
+    }
+  }
+
+  .slide-in {
+    animation: slideInRightToLeft 0.8s ease-out both;
+  }
+
+  .float-updown {
+    animation: floatUpDown 3s ease-in-out infinite;
+  }
+/* Subscribe section end */

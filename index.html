@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture - Landing Page</title>
+    <link rel="stylesheet" href="output/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<!-- Header/ Navbar section start -->
+  <header class="bg-[#3B5D50] text-white py-4 px-10 sm:px-10 md:px-16 lg:px-20 sticky top-0 z-50 shadow-sm">
+  <div class="max-w-screen-xl mx-auto flex items-center justify-between">
+    <!-- Logo -->
+    <h1 class="text-xl font-bold text-yellow-400">Furniture</h1>
+
+    <!-- Desktop Nav -->
+    <nav class="hidden md:flex space-x-4 items-center text-sm">
+      <a href="#home" class="text-white hover:text-yellow-400 transition">Home</a>
+      <a href="#about" class="text-white hover:text-yellow-400 transition">About us</a>
+      <a href="#services" class="text-white hover:text-yellow-400 transition">Services</a>
+      <a href="#blog" class="text-white hover:text-yellow-400 transition">Blog</a>
+      <a href="#contact" class="text-white hover:text-yellow-400 transition">Contact us</a>
+    </nav>
+
+    <!-- Icons & Hamburger -->
+    <div class="flex items-center space-x-3">
+      <!-- Desktop Icons -->
+      <a href="#" class="text-lg hover:text-yellow-400 hidden md:inline"><i class="fa-regular fa-user"></i></a>
+      <a href="#" class="text-lg hover:text-yellow-400 hidden md:inline"><i class="fa-solid fa-cart-shopping"></i></a>
+
+      <!-- Mobile Menu Button -->
+      <button id="menuBtn" class="md:hidden text-2xl focus:outline-none">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="md:hidden px-4 mt-3 space-y-3 text-center hidden">
+    <a href="#home" class="block text-white hover:text-yellow-400 active:scale-95 transition">Home</a>
+    <a href="#about" class="block text-white hover:text-yellow-400 active:scale-95 transition">About us</a>
+    <a href="#services" class="block text-white hover:text-yellow-400 active:scale-95 transition">Services</a>
+    <a href="#blog" class="block text-white hover:text-yellow-400 active:scale-95 transition">Blog</a>
+    <a href="#contact" class="block text-white hover:text-yellow-400 active:scale-95 transition">Contact us</a>
+
+    <div class="flex justify-center space-x-4 pt-2">
+      <a href="#" class="text-lg text-white hover:text-yellow-400 active:scale-90"><i class="fa-regular fa-user"></i></a>
+      <a href="#" class="text-lg text-white hover:text-yellow-400 active:scale-90"><i class="fa-solid fa-cart-shopping"></i></a>
+    </div>
+  </div>
+</header>
+<!-- Header/ Navbar section end -->
+
+<!--  HERO SECTION START -->
+<section id="home" class="bg-[#3B5D50] scroll-mt-10 flex items-center justify-center py-10 px-10 sm:px-10 md:px-16 lg:px-20 -mt-1">
+
+  <!-- Wrapper Grid -->
+  <div class="max-w-screen-xl mx-auto grid md:grid-cols-2 gap-6 items-center w-full py-8 md:py-12">
+
+    <!--  LEFT: Text Content -->
+    <div class="text-white animate-fade-in">
+      <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold leading-snug md:leading-tight mb-6">
+        Modern Interior <br /> Design Studio
+      </h1>
+
+      <!--  Buttons -->
+      <div class="flex flex-wrap gap-4">
+        <button class="bg-yellow-400 text-black font-semibold px-6 py-3 rounded-full hover:bg-yellow-500 transition duration-300">
+          Shop Now
+        </button>
+        <button class="border border-white text-white px-6 py-3 rounded-full hover:bg-white hover:text-black transition duration-300">
+          Explore
+        </button>
+      </div>
+    </div>
+
+    <!--  RIGHT: Sofa Image + Pattern -->
+    <div class="relative w-full flex justify-center animate-slide-up">
+      <img src="images/couch.png" alt="sofa" class="max-w-full md:max-w-[400px] lg:max-w-[450px]" />
+
+      <!--  Decorative Dots -->
+      <div class="absolute top-0 right-0 hidden md:block">
+        <svg width="100" height="100" viewBox="0 0 120 120" fill="none">
+          <defs>
+            <pattern id="dots" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+              <circle cx="2" cy="2" r="2" fill="white" opacity="0.2"/>
+            </pattern>
+          </defs>
+          <rect width="120" height="120" fill="url(#dots)" />
+        </svg>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!--  HERO SECTION END -->
+
+<!--  PRODUCT SECTION START -->
+<section class="bg-[#f8f9fa] py-16 px-10 sm:px-10 md:px-16 lg:px-20">
+  <div class="max-w-screen-xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+
+    <!--  LEFT CONTENT -->
+    <div class="space-y-6 animate-fade-left">
+      <h2 class="text-3xl md:text-4xl font-semibold text-gray-800">
+        Crafted with <br /> excellent <br /> material.
+      </h2>
+      <p class="text-gray-500 max-w-md">
+        Donec mattis porta eros, aliquet finibus risus interdum at. Nulla vivethe as it was for us to know what was to be done.
+      </p>
+      <button class="bg-black text-white px-6 py-3 rounded-full hover:bg-gray-800 transition">
+        Explore
+      </button>
+    </div>
+
+    <!--  RIGHT PRODUCTS -->
+    <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 animate-fade-up">
+
+      <!--  Product 1 -->
+      <div class="bg-[#e0ebeb] p-4 rounded-xl text-center relative group transition duration-300 hover:scale-105 hover:shadow-lg">
+        <img src="images/product-1.png" alt="chair" class="mx-auto max-h-40 object-contain" />
+        <h3 class="mt-4 font-semibold">Nordic CHAIR</h3>
+        <p class="text-gray-700 font-bold">$50.00</p>
+        <button class="absolute bottom-[-20px] left-1/2 -translate-x-1/2 bg-black text-white rounded-full w-8 h-8 text-sm group-hover:scale-110 transition">
+          +
+        </button>
+      </div>
+
+      <!--  Product 2 -->
+      <div class="bg-[#e0ebeb] p-4 rounded-xl text-center relative group transition duration-300 hover:scale-105 hover:shadow-lg">
+        <img src="images/product-2.png" alt="chair" class="mx-auto max-h-40 object-contain" />
+        <h3 class="mt-4 font-semibold">Kruzo Aero Chair</h3>
+        <p class="text-gray-700 font-bold">$78.00</p>
+        <button class="absolute bottom-[-20px] left-1/2 -translate-x-1/2 bg-black text-white rounded-full w-8 h-8 text-sm group-hover:scale-110 transition">
+          +
+        </button>
+      </div>
+
+      <!--  Product 3 -->
+      <div class="bg-[#e0ebeb] p-4 rounded-xl text-center relative group transition duration-300 hover:scale-105 hover:shadow-lg">
+        <img src="images/product-3.png" alt="chair" class="mx-auto max-h-40 object-contain" />
+        <h3 class="mt-4 font-semibold">Ergonomic Chair</h3>
+        <p class="text-gray-700 font-bold">$43.00</p>
+        <button class="absolute bottom-[-20px] left-1/2 -translate-x-1/2 bg-black text-white rounded-full w-8 h-8 text-sm group-hover:scale-110 transition">
+          +
+        </button>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!--  PRODUCT SECTION END -->
+
+
+<!--  WHY CHOOSE US SECTION START -->
+<section id="about" class="bg-[#f8f9fa] scroll-mt-10 py-16 px-10 sm:px-10 md:px-16 lg:px-20">
+  <div class="max-w-screen-xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+
+    <!--  LEFT CONTENT -->
+    <div class="space-y-6 animate-fade-up">
+      <h2 class="text-3xl md:text-4xl font-semibold text-gray-800">
+        Why Choose Us
+      </h2>
+      <p class="text-gray-500 max-w-md">
+        Donec mattis porta eros, aliquet finibus risus interdum at. Nulla vivethe as it was for us to know what was to be done.
+      </p>
+
+      <!--  Features Grid -->
+      <div class="grid sm:grid-cols-2 gap-6 pt-6">
+
+        <!-- Feature 1 -->
+        <div class="flex items-start space-x-4 group">
+          <div class="p-2 bg-[#e0ebeb] rounded-full group-hover:scale-105 transition w-10 h-8 flex items-center justify-center">
+            <img src="images/Truck.png" alt="Truck Icon" class="w-4 h-4" />
+          </div>
+          <div>
+            <h4 class="font-semibold text-gray-800">Fast & Free Shipping</h4>
+            <p class="text-sm text-gray-500">Donec mattis porta eros, aliquet finibus risus interdum at.</p>
+          </div>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="flex items-start space-x-4 group">
+          <div class="p-2 bg-[#e0ebeb] rounded-full group-hover:scale-105 transition w-10 h-8 flex items-center justify-center">
+            <img src="images/Shop-bag.png" alt="Shopping Bag Icon" class="w-4 h-4" />
+          </div>
+          <div>
+            <h4 class="font-semibold text-gray-800">Easy to Shop</h4>
+            <p class="text-sm text-gray-500">Donec mattis porta eros, aliquet finibus risus interdum at.</p>
+          </div>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="flex items-start space-x-4 group">
+          <div class="p-2 bg-[#e0ebeb] rounded-full group-hover:scale-105 transition w-10 h-8 flex items-center justify-center">
+            <img src="images/Support.png" alt="Support Icon" class="w-4 h-4" />
+          </div>
+          <div>
+            <h4 class="font-semibold text-gray-800">24/7 Support</h4>
+            <p class="text-sm text-gray-500">Donec mattis porta eros, aliquet finibus risus interdum at.</p>
+          </div>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="flex items-start space-x-4 group">
+          <div class="p-2 bg-[#e0ebeb] rounded-full group-hover:scale-105 transition w-10 h-8 flex items-center justify-center">
+            <img src="images/Return.png" alt="Return Icon" class="w-4 h-4" />
+          </div>
+          <div>
+            <h4 class="font-semibold text-gray-800">Hassle Free Returns</h4>
+            <p class="text-sm text-gray-500">Donec mattis porta eros, aliquet finibus risus interdum at.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!--  RIGHT IMAGE + DOT PNG -->
+    <div class="relative w-full max-w-md mx-auto animate-fade-up delay-200">
+
+      <!--  Dot Image (replace with your own if needed) -->
+      <img src="images/Dot.png" alt="dots" class="absolute -top-8 -left-8 w-[80px] sm:-[100px] md:w-[200px] opacity-70 z-0 pointer-events-none" />
+
+      <!--  Main Image -->
+      <img src="images/why-choose.png" alt="Why Choose Us" class="relative z-10 rounded-xl shadow-md w-full h-96" />
+    </div>
+
+  </div>
+</section>
+<!--  WHY CHOOSE US SECTION END -->
+
+
+<!--  MODERN INTERIOR SECTION START -->
+<section id="services" class="w-full bg-[#f8f9f9] scroll-mt-10 py-16 px-10 sm:px-10 md:px-16 lg:px-20">
+  <div class="max-w-screen-xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+
+    <!--  LEFT IMAGES -->
+    <div class="relative w-full max-w-md mx-auto animate-zoom animation-delay-200">
+      <!-- Dot Background -->
+      <img src="images/Dot(1).png" alt="dots"
+        class="absolute -top-8 -left-8 w-[80px] sm:w-[100px] md:w-[200px] opacity-40 z-0" />
+
+      <!-- Main Left Image -->
+      <img src="images/Home.png" alt="sofa left"
+        class="relative rounded-xl shadow-md z-10" />
+    </div>
+
+    <!--  RIGHT TEXTS -->
+    <div class="space-y-6 animate-fade-up animation-delay-400">
+      <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-800">
+        We help <span class="text-gray-900">you make</span><br />
+        Modern Interior Design
+      </h2>
+      <p class="text-gray-500">
+        Donec mattis porta eros, aliquet finibus risus interdum at. Nulla vivethe as it was for us to know what was to be done.
+        this is a long post for the text. This small text has to be placed here.
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-gray-600">
+        <ul class="space-y-2 list-disc list-inside">
+          <li>Donec mattis porta eros</li>
+          <li>Aliquet finibus risus</li>
+        </ul>
+        <ul class="space-y-2 list-disc list-inside">
+          <li>Donec mattis porta eros</li>
+          <li>Aliquet finibus risus</li>
+        </ul>
+      </div>
+
+      <button class="mt-4 px-6 py-2 bg-gray-800 text-white rounded-full hover:bg-gray-700 transition duration-300">
+        Explore
+      </button>
+    </div>
+  </div>
+</section>
+<!--  MODERN INTERIOR SECTION END -->
+
+
+<!--  Testimonials + Product Section start-->
+<section class="w-full bg-[#f8f9f9] py-20 px-10 sm:px-10 md:px-16 lg:px-20">
+  <div class="max-w-screen-xl mx-auto space-y-16">
+
+    <!-- Product Cards -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      <!-- Card 1 -->
+      <div class="group text-center p-6 bg-white rounded-xl shadow hover:shadow-lg duration-300 animate-cardFade">
+        <img src="images/product-1.png" alt="Nordic Chair" class="mx-auto w-24 h-24 mb-4 group-hover:scale-105 duration-300 transition-transform" />
+        <h3 class="text-lg font-semibold">Nordic Chair</h3>
+        <p class="text-gray-500 text-sm">Donec mattis porta eros, aliquet finibus risus in.</p>
+        <a href="#" class="text-sm text-green-700 font-medium mt-2 inline-block">Read more</a>
+      </div>
+      <!-- Card 2 -->
+      <div class="group text-center p-6 bg-white rounded-xl shadow hover:shadow-lg duration-300 animate-cardFade delay-150">
+        <img src="images/product-2.png" alt="Kruzi Aero" class="mx-auto w-24 h-24 mb-4 group-hover:scale-105 duration-300 transition-transform" />
+        <h3 class="text-lg font-semibold">Kruzi Aero</h3>
+        <p class="text-gray-500 text-sm">Donec mattis porta eros, aliquet finibus risus in.</p>
+        <a href="#" class="text-sm text-green-700 font-medium mt-2 inline-block">Read more</a>
+      </div>
+      <!-- Card 3 -->
+      <div class="group text-center p-6 bg-white rounded-xl shadow hover:shadow-lg duration-300 animate-cardFade delay-300">
+        <img src="images/product-3.png" alt="Ergonomic Chair" class="mx-auto w-24 h-24 mb-4 group-hover:scale-105 duration-300 transition-transform" />
+        <h3 class="text-lg font-semibold">Ergonomic Chair</h3>
+        <p class="text-gray-500 text-sm">Donec mattis porta eros, aliquet finibus risus in.</p>
+        <a href="#" class="text-sm text-green-700 font-medium mt-2 inline-block">Read more</a>
+      </div>
+    </div>
+
+    <!-- Testimonials -->
+    <div class="text-center space-y-8 animate-fadeUp">
+      <h2 class="text-2xl md:text-3xl font-semibold text-gray-800">Testimonials</h2>
+      <p class="max-w-3xl mx-auto text-gray-600 text-base leading-relaxed">
+        ”Donec nibh magna, interdum quis massa sed, rhoncus laoreet quam. Mauris accumsan felis fermentum euismod egestas. Mauris ante augue, cursus sit amet arcu a, maximus suscipit nibh...”
+      </p>
+
+      <!-- Profile -->
+      <div class="flex flex-col items-center space-y-2">
+        <img src="images/girl.png" alt="Michelle" class="w-14 h-14 rounded-full animate-bounce" />
+        <div class="text-sm">
+          <p class="font-semibold text-gray-800">Michelle Anna</p>
+          <p class="text-gray-500">CEO, Co-Founder, XYZ Inc.</p>
+        </div>
+      </div>
+
+      <!-- Navigation Arrows -->
+      <div class="flex items-center justify-center gap-6 pt-6">
+        <button class="w-10 h-10 flex items-center justify-center bg-gray-200 hover:bg-gray-300 rounded-full transition">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+        <button class="w-10 h-10 flex items-center justify-center bg-green-700 hover:bg-green-800 rounded-full transition">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Dots -->
+      <div class="flex justify-center gap-2 pt-4">
+        <span class="w-2 h-2 bg-green-700 rounded-full"></span>
+        <span class="w-2 h-2 bg-gray-300 rounded-full"></span>
+        <span class="w-2 h-2 bg-gray-300 rounded-full"></span>
+      </div>
+    </div>
+  </div>
+</section>
+<!--  Testimonials + Product Section end-->
+
+<!--  Blog Section Start  -->
+<section id="blog" class="bg-[#f8f9f9] scroll-mt-10 py-12 px-10 sm:px-10 md:px-16 lg:px-20">
+  <div class="flex justify-between items-center mb-8">
+    <h2 class="text-2xl md:text-3xl font-semibold text-gray-800">Recent Blog</h2>
+    <a href="#" class="text-sm font-medium text-gray-700 underline hover:text-black transition">View All Posts</a>
+  </div>
+
+  <div class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-6">
+    <!-- Blog Card 1 -->
+    <div class="bg-white rounded-lg overflow-hidden shadow hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300 animate-slideInLeftToRight">
+      <img src="images/img7.png" alt="Blog 1" class="w-full h-48 object-cover">
+      <div class="p-4">
+        <h3 class="text-lg font-semibold text-gray-800">First Time Home Owner Ideas</h3>
+        <p class="text-sm text-gray-500 mt-1">by Nana Ama on Nov 18th, 2022</p>
+      </div>
+    </div>
+
+    <!-- Blog Card 2 -->
+    <div class="bg-white rounded-lg overflow-hidden shadow hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300 animate-slideInLeftToRight delay-100">
+      <img src="images/img8.png" alt="Blog 2" class="w-full h-48 object-cover">
+      <div class="p-4">
+        <h3 class="text-lg font-semibold text-gray-800">First Time Home Owner Ideas</h3>
+        <p class="text-sm text-gray-500 mt-1">by Nana Ama on Nov 18th, 2022</p>
+      </div>
+    </div>
+
+    <!-- Blog Card 3 -->
+    <div class="bg-white rounded-lg overflow-hidden shadow hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300 animate-slideInLeftToRight delay-200">
+      <img src="images/img9.png" alt="Blog 3" class="w-full h-48 object-cover">
+      <div class="p-4">
+        <h3 class="text-lg font-semibold text-gray-800">First Time Home Owner Ideas</h3>
+        <p class="text-sm text-gray-500 mt-1">by Nana Ama on Nov 18th, 2022</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!--  Blog Section End -->
+
+<!--  Subscribe section start -->
+<section id="contact" class="bg-[#f8f9f9] scroll-mt-10 py-12 px-10 sm:px-10 md:px-16 lg:px-20 slide-in">
+  <div class="max-w-6xl mx-auto flex flex-col-reverse lg:flex-row items-center justify-between gap-10">
+    
+    <!-- Left: Form -->
+    <div class="w-full lg:w-1/2">
+      <div class="flex items-center space-x-2 mb-4 justify-center lg:justify-start">
+        <img src="images/email.png" alt="Email logo" class="h-6 w-5">
+        <p class="text-gray-700 font-medium text-center lg:text-left">Subscribe to Newsletter</p>
+      </div>
+
+      <form class="flex flex-col sm:flex-row items-center gap-3 flex-wrap">
+        <input 
+          type="text" 
+          placeholder="Enter your name" 
+          class="px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-teal-500 w-full sm:w-auto flex-1 min-w-[180px]" 
+        />
+        <input 
+          type="email" 
+          placeholder="Enter your e-mail" 
+          class="px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-teal-500 w-full sm:w-auto flex-1 min-w-[180px]" 
+        />
+        <button 
+          type="submit" 
+          class="bg-teal-600 hover:bg-teal-700 text-white p-3 rounded-md transition-all flex items-center justify-center"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="white" viewBox="0 0 24 24" stroke="none">
+            <path d="M2 21l21-9L2 3v7l15 2-15 2v7z"/>
+          </svg>
+        </button>
+      </form>
+    </div>
+
+    <!-- Right: Sofa Image -->
+    <div class="w-full lg:w-1/2 text-center">
+      <img src="images/sofa.png" alt="chair" class="w-full max-w-xs mx-auto float-updown" />
+    </div>
+  </div>
+</section>
+<!--  Subscribe section end -->
+
+<!--  Footer Start -->
+<footer class="bg-white border-t border-gray-200 py-12 px-10 sm:px-10 md:px-16 lg:px-20 text-gray-700 text-sm">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-8">
+
+    <!-- Company Info -->
+    <div class="md:col-span-2 space-y-4">
+      <h2 class="text-xl font-semibold text-yellow-400">Furniture</h2>
+      <p class="text-gray-500">
+        Donec mattis porta eros, aliquet finibus risus interdum at. Nulla vivethe as it was for us to know what was to be done.
+        the this is a long post for the text. This small text has to be placed here, since this is
+      </p>
+
+      <!-- Social Icons (Font Awesome) -->
+      <div class="flex space-x-3 pt-2">
+        <a href="#" class="w-9 h-9 rounded-full bg-gray-200 flex items-center justify-center hover:bg-gray-300 transition">
+          <i class="fab fa-facebook-f text-gray-600"></i>
+        </a>
+        <a href="#" class="w-9 h-9 rounded-full bg-gray-200 flex items-center justify-center hover:bg-gray-300 transition">
+          <i class="fab fa-instagram text-gray-600"></i>
+        </a>
+        <a href="#" class="w-9 h-9 rounded-full bg-gray-200 flex items-center justify-center hover:bg-gray-300 transition">
+          <i class="fab fa-twitter text-gray-600"></i>
+        </a>
+        <a href="#" class="w-9 h-9 rounded-full bg-gray-200 flex items-center justify-center hover:bg-gray-300 transition">
+          <i class="fab fa-linkedin-in text-gray-600 "></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Footer Links Column 1 -->
+    <div>
+      <ul class="space-y-2 items-center md:items-start flex flex-col">
+        <li><a href="#" class="hover:underline hover:text-yellow-400">About us</a></li>
+        <li><a href="#" class="hover:underline hover:text-yellow-400">Services</a></li>
+        <li><a href="#" class="hover:underline hover:text-yellow-400">Blog</a></li>
+        <li><a href="#" class="hover:underline hover:text-yellow-400">Contact us</a></li>
+      </ul>
+    </div>
+
+    <!-- Footer Links Column 2 -->
+    <div>
+      <ul class="space-y-2 items-center md:items-start flex flex-col">
+        <li><a href="#" class="hover:underline hover:text-yellow-400">Support</a></li>
+        <li><a href="#" class="hover:underline hover:text-yellow-400">Knowledge base</a></li>
+        <li><a href="#" class="hover:underline hover:text-yellow-400">Live chat</a></li>
+        <li><a href="#" class="hover:underline hover:text-yellow-400">Jobs</a></li>
+        <li><a href="#" class="hover:underline hover:text-yellow-400">Our team</a></li>
+        <li><a href="#" class="hover:underline hover:text-yellow-400">Leadership</a></li>
+        <li><a href="#" class="hover:underline hover:text-yellow-400">Privacy Policy</a></li>
+      </ul>
+    </div>
+
+    <!-- Footer Links Column 3 -->
+    <div>
+      <ul class="space-y-2 items-center md:items-start flex flex-col">
+        <li><a href="#" class="hover:underline hover:text-yellow-400">Nordic Chair</a></li>
+        <li><a href="#" class="hover:underline hover:text-yellow-400">Kruzo Aero</a></li>
+        <li><a href="#" class="hover:underline hover:text-yellow-400">Ergonomic</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Bottom Line -->
+  <div class="mt-10 border-t border-gray-200 pt-6 flex flex-col md:flex-row items-center justify-between text-gray-500 text-xs">
+    <p>&copy; 2025 Furniture.MHRX All Rights Reserved.</p>
+    <div class="flex space-x-4 mt-2 md:mt-0">
+      <a href="#" class="hover:underline">Terms & Conditions</a>
+      <a href="#" class="hover:underline">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+<!-- Footer End -->
+
+
+
+
+
+
+
+
+   
+    <!-- link added -->
+    <script src="scripts.js"></script>
+</body>
+</html>
