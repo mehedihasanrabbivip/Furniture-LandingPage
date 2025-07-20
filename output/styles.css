@@ -216,6 +216,9 @@
   .absolute {
     position: absolute;
   }
+  .fixed {
+    position: fixed;
+  }
   .relative {
     position: relative;
   }
@@ -397,8 +400,20 @@
   .animate-bounce {
     animation: var(--animate-bounce);
   }
-  .scroll-mt-20 {
-    scroll-margin-top: calc(var(--spacing) * 20);
+  .scroll-mt-2 {
+    scroll-margin-top: calc(var(--spacing) * 2);
+  }
+  .scroll-mt-8 {
+    scroll-margin-top: calc(var(--spacing) * 8);
+  }
+  .scroll-mt-24 {
+    scroll-margin-top: calc(var(--spacing) * 24);
+  }
+  .scroll-mt-26 {
+    scroll-margin-top: calc(var(--spacing) * 26);
+  }
+  .scroll-mt-28 {
+    scroll-margin-top: calc(var(--spacing) * 28);
   }
   .list-inside {
     list-style-position: inside;
