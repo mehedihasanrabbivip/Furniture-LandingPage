@@ -1,11 +1,5 @@
 @import "tailwindcss";
 
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 68px;
-}
-
-
 /* navbar start */
 @layer utilities {
   @keyframes slideDown {
